@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9485F9A4-970C-4BCE-B3F8-66C90FD31D5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bies</RootNamespace>
+    <AssemblyName>bies</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <ApplicationIcon>bundle.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v7.2, Version=7.2.1.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBoxEditTrade.cs" />
+    <Compile Include="Entity\ComboBoxItems.cs" />
+    <Compile Include="Entity\ComboBoxSubItems.cs" />
+    <Compile Include="Entity\Currency.cs" />
+    <Compile Include="Entity\CurrencyRate.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Entity\Approve.cs" />
+    <Compile Include="Entity\Contract.cs" />
+    <Compile Include="Entity\ContractDoc.cs" />
+    <Compile Include="Entity\ContractDocWork.cs" />
+    <Compile Include="Entity\Filedoc.cs" />
+    <Compile Include="Entity\Files.cs" />
+    <Compile Include="Entity\Invites.cs" />
+    <Compile Include="Entity\InviteStatus.cs" />
+    <Compile Include="Entity\OpenProtolol.cs" />
+    <Compile Include="Entity\Payment.cs" />
+    <Compile Include="Entity\PaymentBaseCatalog.cs" />
+    <Compile Include="Entity\RatingReport.cs" />
+    <Compile Include="Entity\TenderDocs.cs" />
+    <Compile Include="Entity\Trades.cs" />
+    <Compile Include="Entity\TypeDoc.cs" />
+    <Compile Include="Entity\Users.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="FormAddCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddCurrency.Designer.cs">
+      <DependentUpon>FormAddCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormApproveAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormApproveAdd.Designer.cs">
+      <DependentUpon>FormApproveAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContractDocAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContractDocAdd.Designer.cs">
+      <DependentUpon>FormContractDocAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContractDocs2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContractDocs2.Designer.cs">
+      <DependentUpon>FormContractDocs2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContractDocs3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContractDocs3.Designer.cs">
+      <DependentUpon>FormContractDocs3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurencyCatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCurencyCatalog.Designer.cs">
+      <DependentUpon>FormCurencyCatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocNameAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocNameAdd.Designer.cs">
+      <DependentUpon>FormDocNameAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinance.Designer.cs">
+      <DependentUpon>FormFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInviteDoccAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInviteDoccAdd.Designer.cs">
+      <DependentUpon>FormInviteDoccAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaymentSpravochnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaymentSpravochnik.Designer.cs">
+      <DependentUpon>FormPaymentSpravochnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaymet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaymet.Designer.cs">
+      <DependentUpon>FormPaymet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProjectNameCatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProjectNameCatalog.Designer.cs">
+      <DependentUpon>FormProjectNameCatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProtokolDocAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProtokolDocAdd.Designer.cs">
+      <DependentUpon>FormProtokolDocAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRatingReportDocAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRatingReportDocAdd.Designer.cs">
+      <DependentUpon>FormRatingReportDocAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTemplateDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTemplateDoc.Designer.cs">
+      <DependentUpon>FormTemplateDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTenderDocAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTenderDocAdd.Designer.cs">
+      <DependentUpon>FormTenderDocAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTradeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTradeEdit.Designer.cs">
+      <DependentUpon>FormTradeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExcelForm.Designer.cs">
+      <DependentUpon>ImportExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSetting.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddCurrency.resx">
+      <DependentUpon>FormAddCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormApproveAdd.resx">
+      <DependentUpon>FormApproveAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContractDocAdd.resx">
+      <DependentUpon>FormContractDocAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContractDocs2.resx">
+      <DependentUpon>FormContractDocs2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContractDocs3.resx">
+      <DependentUpon>FormContractDocs3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurencyCatalog.resx">
+      <DependentUpon>FormCurencyCatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocNameAdd.resx">
+      <DependentUpon>FormDocNameAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinance.resx">
+      <DependentUpon>FormFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInviteDoccAdd.resx">
+      <DependentUpon>FormInviteDoccAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaymentSpravochnik.resx">
+      <DependentUpon>FormPaymentSpravochnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaymet.resx">
+      <DependentUpon>FormPaymet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProjectNameCatalog.resx">
+      <DependentUpon>FormProjectNameCatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProtokolDocAdd.resx">
+      <DependentUpon>FormProtokolDocAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRatingReportDocAdd.resx">
+      <DependentUpon>FormRatingReportDocAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTemplateDoc.resx">
+      <DependentUpon>FormTemplateDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTenderDocAdd.resx">
+      <DependentUpon>FormTenderDocAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTradeEdit.resx">
+      <DependentUpon>FormTradeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExcelForm.resx">
+      <DependentUpon>ImportExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="utils.cs" />
+    <Compile Include="WriteReadImageToDatabase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS-Office-2003-Word-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bundle.ico" />
+    <Content Include="green.ico" />
+    <Content Include="money-example2.ico" />
+    <None Include="Resources\microsoftofficeexcel.png" />
+    <None Include="Template\Report1a.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\Report1ar.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\Report1b.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\Report1br.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\report2a.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\report2ar.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\report2b.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\report2br.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="TRCPPLib">
+      <Guid>{65E7E4A0-ECF0-11D5-AF9B-C0F5E438B928}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="TrXLRep">
+      <Guid>{9255F0F4-D95D-11D6-AF9B-94A7786F5B1B}</Guid>
+      <VersionMajor>26</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
